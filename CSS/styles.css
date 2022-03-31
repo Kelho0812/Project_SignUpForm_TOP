@@ -95,7 +95,7 @@ button {
   height: 40px;
   line-height: 20px;
   list-style: none;
-  margin: 0;
+  margin-top: 20px;
   outline: none;
   padding: 10px 16px;
   position: relative;
@@ -112,3 +112,20 @@ button:hover,
 button:focus {
     transition:  200ms;
   background-color: #F082AC;}
+
+.formContainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    height: 100%;
+}
+
+.formSeparators {
+    font-weight: 1000;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
