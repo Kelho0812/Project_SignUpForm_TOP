@@ -7,11 +7,34 @@ h1 {
     margin-bottom: 100px;
 }
 input {
+    border: solid;
+    border-radius: 5px;
     width : 150px;
     padding: 3px;
     margin: 0;
     box-sizing: border-box;
   }
+
+  input:hover, input:focus {
+    transition:  150ms;
+    border: solid;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    outline: solid #fde861;
+  }
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    transition:  300ms;
+
+    border: solid;
+    border-radius: 5px;
+    outline: solid red;
+}
+
+input:valid:not(:focus):not(:placeholder-shown) {
+    transition:  300ms;
+    outline:  solid greenyellow;
+}
 
 input#userEmail{
     width: 200px;
