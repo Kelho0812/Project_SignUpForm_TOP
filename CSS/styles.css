@@ -20,7 +20,7 @@ input {
     border: solid;
     border-radius: 5px;
     -webkit-appearance: none;
-    outline: solid #fde861;
+    outline: 3px solid #fde861;
   }
 
 input:invalid:not(:focus):not(:placeholder-shown) {
@@ -28,12 +28,12 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 
     border: solid;
     border-radius: 5px;
-    outline: solid red;
+    outline: 3px solid red;
 }
 
 input:valid:not(:focus):not(:placeholder-shown) {
     transition:  300ms;
-    outline:  solid greenyellow;
+    outline: 3px solid greenyellow;
 }
 
 input#userEmail{
